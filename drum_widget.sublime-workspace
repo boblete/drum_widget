@@ -1,0 +1,1182 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fra",
+				"framework.js\t(package.json)"
+			],
+			[
+				"fram",
+				"framework.js\t(index.html)"
+			],
+			[
+				"bin",
+				"bindContinueButton"
+			],
+			[
+				"spri",
+				"spriteArray"
+			],
+			[
+				"showTh",
+				"showTheoryRubric"
+			],
+			[
+				"theory-rubric",
+				"theory-rubric-cotnainer"
+			],
+			[
+				"sho",
+				"showTheoryFeedback"
+			],
+			[
+				"Grain",
+				"Grain_1a1"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"curr",
+				"currentID"
+			],
+			[
+				"target",
+				"targetArray"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"se",
+				"semantic-ui\t(package.json)"
+			],
+			[
+				"note",
+				"notestavegame\t(main.js)"
+			],
+			[
+				"col",
+				"colourArrayIndex"
+			],
+			[
+				"set",
+				"setbmd2"
+			],
+			[
+				"Me",
+				"MenuButton\t(MenuButton.js)"
+			],
+			[
+				"mainS",
+				"mainSoundPlay"
+			],
+			[
+				"current",
+				"currentScoreType"
+			],
+			[
+				"html5",
+				"html5-player"
+			],
+			[
+				"Cue",
+				"CuePoint"
+			],
+			[
+				"decode",
+				"decodeURI(encodedURI)\tWindow"
+			],
+			[
+				"overf",
+				"overflow-x\t(iframed-player.css)"
+			],
+			[
+				"overflow",
+				"overflow-y\t(iframed-player.css)"
+			],
+			[
+				"rewin",
+				"rewindOrLoop"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"PLAY",
+				"PLAYER_VARS"
+			],
+			[
+				"undef",
+				"undefined"
+			],
+			[
+				"CU",
+				"CuePoint_asArray"
+			],
+			[
+				"json",
+				"json_on_name"
+			],
+			[
+				"PXI",
+				"PIXIstage_back"
+			],
+			[
+				"PIXIsta",
+				"PIXIstage_back"
+			],
+			[
+				"json_o",
+				"json_off"
+			],
+			[
+				"instr",
+				"instrumentLoader"
+			],
+			[
+				"off",
+				"offsetY"
+			],
+			[
+				"music",
+				"musicalRect"
+			],
+			[
+				"mid",
+				"miditonotename"
+			],
+			[
+				"colourl",
+				"colourLabelLookup"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"alig",
+				"text-align"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"to",
+				"topleft"
+			],
+			[
+				"appen",
+				"append"
+			],
+			[
+				"typ",
+				"typeof"
+			],
+			[
+				"vide",
+				"videoPath"
+			],
+			[
+				"PLa",
+				"PLAYER_VARS"
+			],
+			[
+				"exec",
+				"executableType"
+			],
+			[
+				"repla",
+				"replaceWith\treplaceWith"
+			],
+			[
+				"noI",
+				"noInstrumentErrorBoolean"
+			],
+			[
+				"pageTurn",
+				"pageTurnHeight"
+			],
+			[
+				"check",
+				"checkCurrentPageHeight"
+			],
+			[
+				"vi",
+				"viewState"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"main",
+				"mainSound"
+			],
+			[
+				"seeka",
+				"seekableEnd"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"instrumentLoad",
+				"instrumentLoaded"
+			],
+			[
+				"allLoad",
+				"allloadedTest"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"mainsound",
+				"mainSound"
+			],
+			[
+				"Pos",
+				"position"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"prependT",
+				"prependText"
+			],
+			[
+				"destr",
+				"destruct"
+			],
+			[
+				"isntrumentOff",
+				"instrumentOffTextures"
+			],
+			[
+				"instrumentOff",
+				"instrumentOffTextures"
+			],
+			[
+				"currentIns",
+				"currentInstrumentID"
+			],
+			[
+				"instrum",
+				"instrumentObject"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"element",
+				"elementID"
+			],
+			[
+				"app",
+				"append\t.append"
+			],
+			[
+				"ren",
+				"render"
+			],
+			[
+				"notes",
+				"notes_array"
+			],
+			[
+				"start",
+				"startAnimatingAfterSetup"
+			],
+			[
+				"B",
+				"B"
+			],
+			[
+				"not",
+				"notename"
+			],
+			[
+				"PIXI",
+				"PIXI_text"
+			],
+			[
+				"goto",
+				"gotoAndStop"
+			],
+			[
+				"inst",
+				"instrumentArray"
+			],
+			[
+				"anim",
+				"animinstrument"
+			],
+			[
+				"PIX",
+				"PIXIrenderer"
+			],
+			[
+				"pixi",
+				"PIXIstage"
+			],
+			[
+				"Pixi",
+				"PIXIstage"
+			],
+			[
+				"kick",
+				"kickoff"
+			],
+			[
+				"file",
+				"filePaths"
+			],
+			[
+				"unde",
+				"undefined"
+			],
+			[
+				"obje",
+				"objectHeight"
+			],
+			[
+				"dr",
+				"dragArray"
+			],
+			[
+				"xml",
+				"xmlFile"
+			],
+			[
+				"ini",
+				"initPoint"
+			],
+			[
+				"left",
+				"topLeft"
+			],
+			[
+				"bb",
+				"getBBox"
+			],
+			[
+				"dro",
+				"dropset"
+			],
+			[
+				"und",
+				"undefined"
+			],
+			[
+				"sa",
+				"satteliteEnabledBoolean"
+			],
+			[
+				"sattelite",
+				"satteliteEnabled"
+			],
+			[
+				"pop",
+				"popupGroup"
+			],
+			[
+				"an",
+				"aniamtion"
+			],
+			[
+				"menu",
+				"menuIndex"
+			],
+			[
+				"cu",
+				"currentMenuIndex"
+			],
+			[
+				"men",
+				"menuIndex"
+			],
+			[
+				"offset",
+				"offsetY"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"tras",
+				"translate"
+			],
+			[
+				"wor",
+				"worldTitleText"
+			],
+			[
+				"at",
+				"attr"
+			],
+			[
+				"fill",
+				"fill-opacity"
+			],
+			[
+				"ribbon",
+				"ribbonSrc"
+			],
+			[
+				"sta",
+				"stageActiveArr"
+			],
+			[
+				"stageAc",
+				"stageActiveArr"
+			],
+			[
+				"stage",
+				"stageActiveArray"
+			],
+			[
+				"lear",
+				"LearnTheSong"
+			],
+			[
+				"finish",
+				"finishSetup"
+			],
+			[
+				"type",
+				"dataType"
+			],
+			[
+				"exe",
+				"executableType"
+			],
+			[
+				"cent",
+				"centerwidth"
+			],
+			[
+				"perc",
+				"percent"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"show",
+				"showError"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"bac",
+				"background-attachment"
+			],
+			[
+				"sor",
+				"sortCues"
+			],
+			[
+				"err",
+				"noInstrumentErrorBoolean"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"todo",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublimelint",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"subli",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"sublim",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"lint",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"jslin",
+				"JSLint"
+			],
+			[
+				"setsyntax ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sublimel",
+				"SublimeLint: Show All Errors"
+			],
+			[
+				"sublime",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"su",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"sub",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"subl",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"pag",
+				"Package Control: Remove Package"
+			],
+			[
+				"pre",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"file",
+				"File: Copy URL"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"BOwer",
+				"Bower: Install"
+			],
+			[
+				"",
+				"Bower: Install"
+			],
+			[
+				"Bower",
+				"Bower: Install"
+			],
+			[
+				"Bow",
+				"Bower: Configure project"
+			],
+			[
+				"bo",
+				"Bower: Install"
+			],
+			[
+				"bower ",
+				"Bower: Install"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 119.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/bobsmith/WORK/html5/drum_widget"
+	],
+	"file_history":
+	[
+		"/Users/bobsmith/WORK/html5/phasergo/src/states/Grain_1a1.js",
+		"/Users/bobsmith/WORK/html5/phasergo/src/states/1a1.js",
+		"/Users/bobsmith/Dropbox/demo.charanga.com/happy/index.html",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/assets/show.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/assets/html5.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/cmw/common/_standard_js.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/app/models/resource.rb",
+		"/Users/bobsmith/WORK/e-learning-resource/app/models/country.rb",
+		"/Volumes/resource_library/general/Primary/Units/Inspira Pops Dancing In the Street/Listen and appraise - Dancing in the Street/assets/listening_appraisal.xml",
+		"/Users/bobsmith/WORK/e-learning-resource/app/controllers/application.rb",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/js/app.js",
+		"/Users/bobsmith/Dropbox/SMILE_updating_NEW RESOURCE BUILDs/_PASSED/LMS-Vc-43 D and A Blues/resource/LMS-Vc-43 D and A Blues/assets/spp.xml",
+		"/Volumes/BOOTCAMP/Users/Public/Documents/WORK/Charanga new/As2/elearning_resource_players/primary_product/SmilePinnPnuPlayer/smile.html",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/common/_html5_js.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/public/javascripts/asset_player_2015.js",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/img/inst/glock_off.json",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/img/inst/glock.json",
+		"/Volumes/resource_library/glockenspiel/pieces/music services/Lambeth/LMS-MXPlay-Gl-Egyptian/resource/LMS-MXPlay-Gl-Egyptian/assets/reh/song.xml",
+		"/Volumes/resource_library/glockenspiel/pieces/music services/Lambeth/LMS-MXPlay-Gl-Egyptian/resource/LMS-MXPlay-Gl-Egyptian/assets/perf/song.xml",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/lib/x2js/xml2json.js",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/js/templates/smile_resource.handlebars",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/js/drag_and_drop_resource.js",
+		"/Users/bobsmith/Desktop/Ident_html/Ident_01.js",
+		"/Users/bobsmith/Applications/Chrome Apps.localized/Default fahmaaghhglfmonjliepjlchgpgfmobi.app/Contents/MacOS/app_mode_loader",
+		"/Users/bobsmith/WORK/e-learning-resource/public/javascripts/jquery-treeview/todo",
+		"/Users/bobsmith/WORK/e-learning-resource/vendor/plugins/interlock/TODO",
+		"/Users/bobsmith/WORK/e-learning-resource/vendor/plugins/resource_this/TODO",
+		"/Users/bobsmith/WORK/e-learning-resource/db/migrate/20110203145352_add_fao_to_dvd_orders.rb",
+		"/Users/bobsmith/WORK/e-learning-resource/public/javascripts/jquery-autocomplete/todo",
+		"/Users/bobsmith/WORK/e-learning-resource/app/models/teaching_object.rb",
+		"/Users/bobsmith/WORK/e-learning-resource/lib/trimmer.rb",
+		"/Volumes/Mac Backup/2014/resources/gh/gh11/assets/video.xml",
+		"/Volumes/Mac Backup/2014/resources/jy/jy1/assets/video.xml",
+		"/Volumes/Mac Backup/2014/resources/jy/jy1/index.html",
+		"/Volumes/Mac Backup/2014/resources/gh/gh11/index.html",
+		"/Volumes/Mac Backup/2014/resources/gh/gh10/index.html",
+		"/Volumes/Mac Backup/2014/resources/gh/gh9/index.html",
+		"/Volumes/Mac Backup/2014/resources/gh/gh8/index.html",
+		"/Users/bobsmith/WORK/fa_2014/Friday avo 2014/.git/config",
+		"/Users/bobsmith/WORK/fa_2014/2014/.git/config",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/bobsmith/WORK/e-learning-resource/public/assets/partner_assets",
+		"/Users/bobsmith/WORK/e-learning-resource/script/plugin",
+		"/Users/bobsmith/WORK/e-learning-resource/public/resource_library/general/audio/licenced/napster/080508/Rage Against the Machine - Know Your Enemy/Rage Against the Machine - Know Your Enemy.mp3",
+		"/Users/bobsmith/WORK/e-learning-resource/public/resource_library/keyboard/pieces/charanga/cmw/keyboard stage 1/cmw_kbd_p_02a_easyE/inspira.html",
+		"/Users/bobsmith/WORK/e-learning-resource/public/assets/packages/GetNetFileXtra.carb",
+		"/Users/bobsmith/WORK/e-learning-resource/lib/scorm_package/schemas/ims_xml.xsd",
+		"/Users/bobsmith/WORK/e-learning-resource/public/bootstrap/package.json",
+		"/Users/bobsmith/WORK/e-learning-resource/app/controllers/pupil_accesses_controller.rb",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/js/smile_resource.js",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/js/templates/puzzle.handlebars",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/js/templates/no_resource.handlebars",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/js/tuning_player_resource.js",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/cmw/common/_logged_in_primary_nav.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/common/_asset_embed.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/css/style.css",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/cmw/common/_footer.html.erb",
+		"/Users/bobsmith/WORK/fa_2014/fridayafternoons-2014.charanga.com/resources/nm/nm7/index.html",
+		"/Users/bobsmith/WORK/fa_2014/fridayafternoons-2014.charanga.com/resources/nm/nm6/index.html",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Users/bobsmith/bin/elr",
+		"/Users/bobsmith/Desktop/dvd_files/internal-6",
+		"/Users/bobsmith/Desktop/dvd_files/external-7",
+		"/Users/bobsmith/Desktop/dvd_files/Rakefile",
+		"/Users/bobsmith/Downloads/Trade Gothic Next Font Family/PASSWORD.txt",
+		"/Users/bobsmith/Downloads/yepnope.js-master/yepnope.1.5.4-min.js",
+		"/Users/bobsmith/Downloads/functions.js",
+		"/Users/bobsmith/Downloads/funklet.js",
+		"/Users/bobsmith/Downloads/root.smil",
+		"/Volumes/resource_library/general/video/famous songs/Empire State of Mind - Jay-Z and Alicia Keys/root.smil",
+		"/Users/bobsmith/Downloads/VA14TUM.zip.crdownload",
+		"/Users/bobsmith/Downloads/functions",
+		"/Users/bobsmith/Downloads/funklet",
+		"/Users/bobsmith/Downloads/FOR BOB/CLEAN ENGINE 1/COGNIFY Latest Engine.as3proj",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/cmw/step_resources/_show_asset.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/app/views/cmw/common/_head.html.erb",
+		"/Users/bobsmith/WORK/e-learning-resource/public/html5-player/index.html",
+		"/Users/bobsmith/WORK/html5/compose/package_old.json",
+		"/Users/bobsmith/WORK/html5/compose/src/app.js",
+		"/Users/bobsmith/Downloads/Cabaret Voltaire - Collected Works 1983-1985 CD1 (2013)/New Album Releases.url",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/JSHint.sublime-settings",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/js/audiosprite.js",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/img/inst/Glock.json",
+		"/Users/bobsmith/Dropbox/demo.charanga.com/bob/index_speed.html",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/js/app.js",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/lib/stats.min.js",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/img/inst/c_clarinet.json",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/lib/sm2/soundmanager2.js",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/lib/sm2/soundmanager2-nodebug-charanga.js",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/img/inst/Glock_off.json",
+		"/Users/bobsmith/Dropbox/demo.charanga.com/bob/sa/appk/js/app.js",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/FindSelected/Default (OSX).sublime-keymap",
+		"/Users/bobsmith/Dropbox/demo.charanga.com/bob/sa/appk/lib/pixi/pixi.js",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/lib/pixi/pixi.js",
+		"/Users/bobsmith/WORK/html5/PixiMinigame/pixi.js-master/examples/example 3 - MovieClip - Copy/index.html",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/img/inst/Clarinet.json",
+		"/Users/bobsmith/WORK/html5/scripts/webserverMAC.bat",
+		"/Users/bobsmith/WORK/html5/scripts/webserverMAC.sh",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/User/SublimeLint.sublime-settings",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/JSLint/JSLint.sublime-build",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/User/JSLint.sublime-settings",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/JSLint/JSLint.sublime-settings",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/sublimelint/SublimeLint.sublime-settings",
+		"/Users/bobsmith/WORK/html5/smile_knockout_js/app/pixitest.html",
+		"/Users/bobsmith/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/bob/WORLD/index.html",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/bob/WORLD/js/cmw_world_menu.js",
+		"/C/Users/Public/Documents/WORK/Charanga new/HTML5/html5_players/dragAndDrop/index.html",
+		"/C/Users/Public/Documents/WORK/Charanga new/HTML5/html5_players/dragAndDrop/js/dragAndDrop.js",
+		"/C/Users/Public/Documents/WORK/Charanga new/HTML5/html5_players/scripts/web-server.js",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/bob/WORLD/testBootstrap.html",
+		"/G/Software/things/r2r-0656.rar Folder/R2R.nfo",
+		"/C/Users/bobsmith/Downloads/bootstrap-3.0.1/bootstrap-3.0.1/js/popover.js",
+		"/C/Users/bobsmith/Desktop/InstrumentSprieSheets/star/star.json",
+		"/C/Users/bobsmith/Desktop/InstrumentSprieSheets/star/star_off.json",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/Kiki/avatar 1.5-in progress/Avatar editor 1_5 for Deployment/assets/xml/avatar.xml",
+		"/C/Users/Public/Documents/WORK/Charanga new/HTML5/html5_players/smile_knockout_js/app/index.html",
+		"/C/Users/bobsmith/Desktop/STARSHINE_EXTRAS/Marching Band/LearnTheSong/assets/whole_song/cues.xml",
+		"/C/Users/bobsmith/Desktop/STARSHINE_EXTRAS/Marching Band/LearnTheSong/assets/whole_song/Marching_band_lyrics.txtlyrics.xml",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/pete/CMW Resources/CMW Clarinet Pieces stages 4-10/cmw_clBb_p_28_spiritFly/assets/perf/song.xml",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/bob/html5.html",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/bob/WORLD/img/node-available.png",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/pete/cmw_clBb_p_39_washerwoman/resource/cmw_clBb_p_39_washerwoman/assets/smile_score.xml",
+		"/C/Users/bobsmith/Downloads/ZoeParser/ZoeParser.hx",
+		"/C/Users/Public/Documents/WORK/Dropbox/Dropbox/demo.charanga.com/pete/cmw_clBb_p_46_inTheGroove/lyrics.xml"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/bobsmith/WORK/html5/web_audio_sequenced_engine/src/app_engine"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"10",
+			"Grain_1a1",
+			"synth",
+			"stevie",
+			"Game",
+			"osc",
+			" game",
+			"assets/",
+			"NoteStaveGame",
+			"scope",
+			"killtwee",
+			"mainSound.pause",
+			"mainSoundPause",
+			"mainSoundPlayPause",
+			"mainSoundPlay",
+			"  mainSound.pause();",
+			"mainSoundPlay",
+			"tween",
+			"mainSoundPlay",
+			"playpause",
+			"js_player",
+			"HEAD",
+			"master",
+			" self.removeFramework",
+			"HEAD",
+			"parts-button-text",
+			"parts-buttons-text",
+			"../images/cmw-logo-white.png",
+			"\n",
+			"View change",
+			"button.btn",
+			"button.",
+			"View change",
+			"tryFallBackWithoutPart",
+			"connection ",
+			"console.log",
+			"selectedScoreTypeValue",
+			"displayCurrentScorePage",
+			"selectedScoreTypeValue",
+			"setReady",
+			"selectedScoreTypeValue",
+			"currentScoreType",
+			"clickScoreChanger",
+			"selectedScoreTypeValue",
+			"viewModel",
+			"addClass",
+			"view change",
+			"active",
+			"scorenu",
+			"scorech",
+			"clickViewChanger",
+			"beta",
+			"selectedScoreTypeValue",
+			"scoreTypeArray",
+			"\"ch\"",
+			"../images/",
+			"nnText",
+			"instrumentLoader",
+			"instrumentPath",
+			"initInstrument",
+			"path",
+			"loadInstrument",
+			"send",
+			"FLVCoreCuePoints",
+			"2481",
+			"spp =",
+			"spp",
+			"spp.data.scoreOverride.fullWidth",
+			"spp",
+			"spp.data.scoreOverride.fullWidth",
+			"fullWidth",
+			"795",
+			"width",
+			"currentScoreMeasure",
+			"checkCurrentPageStyle",
+			"img",
+			"scoreImages",
+			"image",
+			"load",
+			"loadImages",
+			"scoreCredit",
+			"scorecredit",
+			"scoreCredit",
+			"checkCurrentPage",
+			"fullWidth",
+			"checkPrerollBarInjection",
+			"preroll",
+			"scorecredit",
+			"fullWidth",
+			"buttongroupbacking",
+			"initPart",
+			"buttongroupspeed",
+			"buttongroupscoretype",
+			"scoreTest",
+			"fullWidth",
+			"what",
+			"why is",
+			"buttongroupbacking",
+			"clickSpeedChanger",
+			"buttongroupspeed",
+			"wide",
+			"lyrics",
+			"self.tryFall",
+			"../images/",
+			"escape(",
+			"pie",
+			"div.pie",
+			"../images/",
+			"key-icn",
+			"../images/",
+			"menu-speed-ident",
+			"onAllInstrumentAssetsLoaded",
+			"initInstrument",
+			"instrumentPath",
+			"instrument",
+			"rewindorloop",
+			"rewind or loop",
+			"position",
+			"mainsound",
+			"mainsound.oncomplete",
+			"loop",
+			"loadXml2JSON",
+			"loadPart",
+			"btn",
+			"btn-secondary",
+			"btn",
+			"timeline",
+			"createSPP_Player"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Grain_1a1",
+			" this.game",
+			"assets/notestavegame/",
+			"NoteStaveGame",
+			"../img/smile/cmw-logo-white.png",
+			"",
+			"../img/smile/",
+			"channel-\"+channel+\" lyrics-line",
+			"http://fridayafternoons.charanga.com/2014/resources/",
+			"http://fridayafternoons.charanga.com/2014/resources",
+			"",
+			"X2JS",
+			">\\\\\\n",
+			">\\n",
+			"keys_cmw_1oct",
+			"sa/app/",
+			"Glock_off",
+			"Glock",
+			"self.setLyricsVisibility(false)",
+			"self.setLyricsVisibility(true)",
+			"app/",
+			"I'm",
+			"/",
+			"Clarinet%20stage%20",
+			"cmw_clBb_p_",
+			"clarinet/pieces/Charanga/cmw/Clarinet%20stage",
+			"CLARINET",
+			"currentOffHtml",
+			"preCountInTotal",
+			"view_visibility",
+			"view_mode",
+			"CHARANGA_VIEW_VAR",
+			"545px",
+			"500",
+			"\"#",
+			"#",
+			"self.duration ",
+			"smile_app",
+			"scoreData",
+			"score",
+			"page",
+			"width : 550px;",
+			"js",
+			"html_assets/",
+			"-3",
+			"href=\"Friday_Afternoons/",
+			"href=\"Friday_Afternoons",
+			"hrefFriday_Afternoons",
+			"href=\"Friday_Afternoons/",
+			"about_britten.swf",
+			"</li>",
+			"</B>",
+			"><B>",
+			"(Line by line)",
+			"(Line by Line)</name>",
+			"lbl</name>\n(Line by Line)</name>",
+			" type='prompt'>Listen",
+			"type='prompt'>Listen",
+			"<Data><![CDATA[<font color=\"#ff0000\"> <lrg>1</lrg> </font><font color=\"#33AA\"><rg>2,</rg>  </font><font color=\"#ff0000\"><lrg>1</lrg>  </font><font color=\"#33AA\"><rg>2,</rg>  </font><font color=\"#ff0000\"><lrg>1</lrg></font><font color=\"#33AA\"> <rg>2 3,</rg>       </font>]]></Data>",
+			"line",
+			"section",
+			"ARTICULATIONS-Viola-Up-Down-Bows_usa.swf",
+			"_52_",
+			"bassClarinet_",
+			"bassClarinet",
+			"piccolo",
+			"tenorSax",
+			"tenSax.swf",
+			"guitarElectric.swf",
+			"dBass_strings.swf",
+			"viola_strings.swf",
+			"cello_strings.swf",
+			"tuba.swf",
+			"trombone.swf",
+			"tenor_horn",
+			"Tenor",
+			"tnr_horn",
+			"french_horn.swf",
+			"alto_sax.swf",
+			"TUNING_NOTES/Tuning notes - ",
+			"composeapp_offline.swf",
+			"Latin",
+			"LATIN",
+			"HIGHLAND DANCE",
+			"Highland Dance",
+			"Funk",
+			"FUNK",
+			"BAROQUE",
+			"Baroque",
+			"Bhangra",
+			"BHANGRA",
+			"Primary/Topics/Christmas",
+			"composeapp2",
+			"animation_player",
+			"myavatareditor.swf"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "drum_widget.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 322.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

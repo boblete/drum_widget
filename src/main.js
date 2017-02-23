@@ -1,0 +1,1 @@
+const charangaDrumWidget = new DrumWidget();
