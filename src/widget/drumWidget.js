@@ -87,7 +87,11 @@ class DrumWidget {
         this.initSequence(sequence);
     }
     parseqs(value) {
+    	if(value===undefined){
+    		value = [];
+    	}else{
         value = value.split("") || [];
+    	}
         for (var i = 0; i < 16; i++) {
             if (value[i]) {
                 if (value[i] == 0) {
