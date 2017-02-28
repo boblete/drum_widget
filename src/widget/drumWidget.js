@@ -14,32 +14,39 @@ class DrumWidget {
         var panel = this.panel = new Interface.Panel({ container: document.querySelector(".charanga_drum_widget") }) // panel fills page by default, alternatively you can specify boundaries
         var ob = this
         this.play = new Interface.Button({
-            bounds: [.8, .05, .2, .2],
+            bounds: [.85, .05, .15, .2],
             label: 'Play',
-            type: "toggle",
+            mode: "toggle",
             onvaluechange: () => { this.startstop() }
 
         });
 
-           this.share = new Interface.Button({
-            bounds: [.58, .05, .1, .2],
+        this.share = new Interface.Button({
+            bounds: [.55, .05, .1, .2],
             label: 'Share',
-            type: "momentary",
+            mode: 'contact',
             onvaluechange: () => { this.shareclick() }
 
         });
 
-              this.export = new Interface.Button({
-            bounds: [.69, .05, .1, .2],
+         this.export = new Interface.Button({
+            bounds: [.65, .05, .1, .2],
             label: 'Export',
-            type: "momentary",
+            mode: 'contact',
             onvaluechange: () => { this.exportclick() }
+
+        });
+           this.clear = new Interface.Button({
+            bounds: [.75, .05, .1, .2],
+            label: 'Clear',
+            mode: 'contact',
+            onvaluechange: () => { this.clearclick() }
 
         });
 
 
         var k1 = this.k1 =  new Interface.Slider({ 
-  bounds:[0,.05,.3,.2], 
+  bounds:[0.1,.05,.23,.2], 
   label: 'horizontal slider',  
   isVertical:false, 
   value:bpm,
@@ -63,7 +70,7 @@ class DrumWidget {
             }
         });*/
         var k2 = this.k2= new Interface.Slider({ 
-  bounds:[0.35,.05,.2,.2], 
+  bounds:[0.34,.05,.2,.2], 
   label: 'horizontal slider',  
   isVertical:false, 
   value:swing,
@@ -100,26 +107,26 @@ class DrumWidget {
         });
 
         var r1l = new Interface.Label({
-            bounds: [0, 0.375, .05, .1],
-            hAlign: 'right',
+            bounds: [0, 0.375, .1, .1],
+            hAlign: 'center',
             value: 'o-h',
 
         });
         var r2l = new Interface.Label({
-            bounds: [0, 0.55, .05, .1],
-            hAlign: 'right',
+            bounds: [0, 0.55, .1, .1],
+            hAlign: 'center',
             value: 'h-h',
 
         });
         var r3l = new Interface.Label({
-            bounds: [0, 0.725, .05, .1],
-            hAlign: 'right',
+            bounds: [0, 0.725, .1, .1],
+            hAlign: 'center',
             value: 's-d',
 
         });
         var r4l = new Interface.Label({
-            bounds: [0, 0.9, .05, .1],
-            hAlign: 'right',
+            bounds: [0, 0.9, .1, .1],
+            hAlign: 'center',
             value: 'k-d',
 
         });
@@ -129,9 +136,10 @@ class DrumWidget {
             columns: 16,
             bounds: [.1, .3, .9, .7],
             onvaluechange: (row, col, value) => { this.multiButtonChanged(row, col, value) }
+
         });
 
-        panel.add(k1Label, k2Label, k1, k2, this.multiButton, this.play, this.share,this.export, r1l, r2l, r3l, r4l);
+        panel.add(k1Label, k2Label, k1, k2, this.multiButton, this.play, this.share,this.export,this.clear, r1l, r2l, r3l, r4l);
  
       	this.initSequence(sequence);
     
@@ -162,6 +170,7 @@ class DrumWidget {
 
         Tone.latencyHint = "playback";
         Tone.Transport.bpm.value = seq.bpm || 120;
+        Tone.Transport.lookAhead = 0.5;
         Tone.Transport.swing = seq.swing || 0;
         Tone.Transport.swingSubdivision = "16n";
         Tone.Transport.timeSignature = 4;
@@ -180,7 +189,7 @@ class DrumWidget {
         var ohs = new Tone.Sequence(function(time, pitch) {
 
             oh.trigger(time, Math.random() * 0.5 + 0.5);
-
+           
 
         }, this.parseqs(seq.r0), "16n").start(0)
   		var hh = new HighHat({"envelope": {            
@@ -243,6 +252,19 @@ class DrumWidget {
   		console.log(this.multiButton._values);
   		this.createLink()
 	}
+	 clearclick() {
+  		console.log(this.multiButton._values);
+  		 for (var s in this.sequenceList) {
+            for (var i = 0; i < 16; i++) {
+
+                this.multiButton.setValue(s, i, null)         
+
+                
+                this.sequenceList[s].remove(i)
+            
+            }
+        }
+	}
   	 exportclick() {
   	 	
 
@@ -251,15 +273,15 @@ class DrumWidget {
   	 	var s = "?"
   	 		for(var i=0;i< this.multiButton._values.length;i++){
   	 			if(i==0){
-  	 				s+="&r0="
-  	 			}else if(i==15){
+  	 				s+="r0="
+  	 			}else if(i==16){
   	 				s+="&r1="
-  	 			}else if(i==31){
+  	 			}else if(i==32){
   	 				s+="&r2="
-  	 			}else if(i==47){
+  	 			}else if(i==48){
   	 				s+="&r3="
   	 			}
-  	 			if(this.multiButton._values[i]!==null){
+  	 			if(this.multiButton._values[i]!==null && this.multiButton._values[i]!==false){
   	 				s+="1";
   	 			}else{
   	 				s+="0";
@@ -268,7 +290,8 @@ class DrumWidget {
   	 		s+= "&bpm="+window.Tone.Transport.bpm.value
   	 		s+= "&swing"+this.k2.value
   	 		var link = "http://demo.charanga.com/dw"+s;
-  	 		$("#shareLink").html("<a class='share' href='"+link+"'>"+link+"</a>")
+  	 		$("#shareLink").html("<a class='share' href='"+link+"'>"+link+"</a>").show();
+
   	 }
     multiButtonChanged(row, col, value) {
     
@@ -281,7 +304,7 @@ class DrumWidget {
                 this.sequenceList[row].add(col, value)
             }
         }
-
+        $("#shareLink").hide();
     }
     draw(){
     

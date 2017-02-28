@@ -38,4 +38,5 @@ window.Interface = Interface;
     //charangaDrumWidget.deferedInit(parsed);
     $(".starterButton").hide();
     $(window).resize(() => {charangaDrumWidget.draw()});
+    $(window).on("orientationchange",() => {charangaDrumWidget.draw()});
 })
