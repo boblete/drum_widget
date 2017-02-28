@@ -10,12 +10,12 @@
     "build:js": "browserify -d -e src/main.js -t [babelify --comments false --presets es2015] | uglifyjs -cm > build/bundle.min.js",
     "build:css": "cleancss css/main.css -o build/main.min.css",
     "build:html": "htmlprocessor index.html -o build/index.html",
-    "copy:all": "npm run copy:assets && npm run copy:jq",
+    "copy:all": "npm run copy:assets",
     "copy:assets": "ncp assets build/assets",
     "copy:phaser": "ncp node_modules/phaser/build/phaser.min.js build/phaser.min.js",
     "copy:tone": "ncp node_modules/tone/build/Tone.min.js build/tone.min.js",
     "copy:jq": "ncp node_modules/jquery/dist/jquery.min.js build/jquery.min.js",
-    "copy:demo": "ncp build /Users/bobsmith/Dropbox/demo.charanga.com/all_game"
+    "copy:demo": "ncp build /Users/bobsmith/Dropbox/demo.charanga.com/dw"
   },
   "repository": {
     "type": "git",

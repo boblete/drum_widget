@@ -3,11 +3,50 @@ body {
 }
 div.charanga_drum_widget{
 	display: block;
-	top:20px;
-
+	top:0px;
+	margin: 0px;
 	  max-width: 800px;
 	  max-height: 600px;
-	  min-width: 500px;
-	  min-height: 400px;
+	  min-width: 320px;
+	  min-height: 320px;
 	  overflow: hidden;
 }
+.shareLink{
+	display: block;
+	top:0px;
+	margin: 0px;
+	font-family: sans-serif;
+	max-width: 800px;
+	  
+	  min-width: 320px;
+	font-family: sans-serif;
+		position: relative;
+		font-family: monospace;
+	background-color: rgb(204, 204, 204);
+
+	    word-wrap: break-word;
+}
+
+	.starterButton {
+		width: 300px;
+		height: 80px;
+		position: absolute;
+		top:10px;
+		line-height: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		background-color: rgb(204, 204, 204);
+		
+		cursor: pointer;
+		font-family: sans-serif;
+		position: relative;
+		font-family: monospace;
+	}
+
+	.starterButton:active {
+		background-color: #FFB729;
+		color: white;
+	}
+
+

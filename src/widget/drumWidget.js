@@ -1,21 +1,56 @@
-class DrumWidget {
-    constructor(sequence) {
-        console.log("new widget")
 
+import KickDrum from '../synths/KickDrum';
+import SnareDrum from '../synths/SnareDrum';
+import HighHat from '../synths/HighHat';
+class DrumWidget {
+
+    constructor() {
+    	console.log("Make Drum Widget")
+        var sequence = window.drum_sequence;
+     
         var bpm = sequence.bpm!=undefined ? sequence.bpm / 240 : .5;
         var swing = sequence.swing || 0;
 
-        var panel = new Interface.Panel({ container: document.querySelector(".charanga_drum_widget") }) // panel fills page by default, alternatively you can specify boundaries
-
+        var panel = this.panel = new Interface.Panel({ container: document.querySelector(".charanga_drum_widget") }) // panel fills page by default, alternatively you can specify boundaries
+        var ob = this
         this.play = new Interface.Button({
-            bounds: [.9, .05, .1, .1],
+            bounds: [.8, .05, .2, .2],
             label: 'Play',
             type: "toggle",
             onvaluechange: () => { this.startstop() }
 
         });
 
-        var k1 = new Interface.Knob({
+           this.share = new Interface.Button({
+            bounds: [.58, .05, .1, .2],
+            label: 'Share',
+            type: "momentary",
+            onvaluechange: () => { this.shareclick() }
+
+        });
+
+              this.export = new Interface.Button({
+            bounds: [.69, .05, .1, .2],
+            label: 'Export',
+            type: "momentary",
+            onvaluechange: () => { this.exportclick() }
+
+        });
+
+
+        var k1 = this.k1 =  new Interface.Slider({ 
+  bounds:[0,.05,.3,.2], 
+  label: 'horizontal slider',  
+  isVertical:false, 
+  value:bpm,
+    label: "BPM",
+    onvaluechange: function() {
+                var val = (Math.round(this.value * 240))
+                k1Label.setValue(val);
+                window.Tone.Transport.bpm.value = val;
+       }
+});
+        /*.Knob({
             bounds: [0, .05, .05],
             value: bpm,
             usesRotation: false,
@@ -26,9 +61,22 @@ class DrumWidget {
                 k1Label.setValue(val);
                 window.Tone.Transport.bpm.value = val;
             }
-        });
-        var k2 = new Interface.Knob({
-            bounds: [.1, .05, .05],
+        });*/
+        var k2 = this.k2= new Interface.Slider({ 
+  bounds:[0.35,.05,.2,.2], 
+  label: 'horizontal slider',  
+  isVertical:false, 
+  value:swing,
+    label: "Swing",
+   onvaluechange: function() {
+                window.Tone.Transport.swing = this.value / 2;
+                k2Label.setValue((Math.round(this.value * 25) + 50));
+            }
+});
+
+
+      /*  .Knob({
+            bounds: [.3, .05, .05],
             value: 0,
             usesRotation: false,
             centerZero: false,
@@ -37,15 +85,15 @@ class DrumWidget {
                 window.Tone.Transport.swing = this.value / 2;
                 k2Label.setValue((Math.round(this.value * 25) + 50));
             }
-        });
+        });*/
         var k1Label = new Interface.Label({
-            bounds: [0, 0, .05, .1],
+            bounds: [0, 0, .3, .1],
             hAlign: 'center',
             value: Math.round(bpm * 240),
 
         });
         var k2Label = new Interface.Label({
-            bounds: [.1, 0, .05, .1],
+            bounds: [.35, 0, .2, .1],
             hAlign: 'center',
             value: Math.round(swing * 25) + 50,
 
@@ -54,25 +102,25 @@ class DrumWidget {
         var r1l = new Interface.Label({
             bounds: [0, 0.375, .05, .1],
             hAlign: 'right',
-            value: 'oh',
+            value: 'o-h',
 
         });
         var r2l = new Interface.Label({
             bounds: [0, 0.55, .05, .1],
             hAlign: 'right',
-            value: 'hh',
+            value: 'h-h',
 
         });
         var r3l = new Interface.Label({
             bounds: [0, 0.725, .05, .1],
             hAlign: 'right',
-            value: 'sd',
+            value: 's-d',
 
         });
         var r4l = new Interface.Label({
             bounds: [0, 0.9, .05, .1],
             hAlign: 'right',
-            value: 'kd',
+            value: 'k-d',
 
         });
 
@@ -83,8 +131,12 @@ class DrumWidget {
             onvaluechange: (row, col, value) => { this.multiButtonChanged(row, col, value) }
         });
 
-        panel.add(k1Label, k2Label, k1, k2, this.multiButton, this.play, r1l, r2l, r3l, r4l);
-        this.initSequence(sequence);
+        panel.add(k1Label, k2Label, k1, k2, this.multiButton, this.play, this.share,this.export, r1l, r2l, r3l, r4l);
+ 
+      	this.initSequence(sequence);
+    
+
+
     }
     parseqs(value) {
     	if(value===undefined){
@@ -106,75 +158,51 @@ class DrumWidget {
     }
     initSequence(seq) {
         //set bpm 
+        seq = seq || this.sequence;
 
-
+        Tone.latencyHint = "playback";
         Tone.Transport.bpm.value = seq.bpm || 120;
         Tone.Transport.swing = seq.swing || 0;
-        Tone.Transport.swingSubdivision = "8n"
-        Tone.Transport.timeSignature = 4
-        Tone.Transport.loopStart = 0
-        Tone.Transport.loopEnd = "4m"
-        Tone.Transport.PPQ = 192
+        Tone.Transport.swingSubdivision = "16n";
+        Tone.Transport.timeSignature = 4;
+        Tone.Transport.loopStart = 0;
+        Tone.Transport.loopEnd = "4m";
+        Tone.Transport.PPQ = 192;
 
-        var oh = new Tone.MetalSynth({
-            "harmonicity": 24,
-            "resonance": 800,
-            "modulationIndex": 20,
-            "envelope": {
-                "decay": 0.4,
-            },
-            "volume": -15
-        }).toMaster();
+
+
+
+     
+        var oh = new HighHat({"envelope": {            
+                "decay": 0.5,}});
+  
      
         var ohs = new Tone.Sequence(function(time, pitch) {
 
-            oh.frequency.setValueAtTime(900, time, Math.random() * 0.5 + 0.5);
-            oh.triggerAttack(time);
+            oh.trigger(time, Math.random() * 0.5 + 0.5);
 
-        }, this.parseqs(seq.r0), "16n").start(0);
-  		var hh = new Tone.MetalSynth({
-            "harmonicity": 12,
-            "resonance": 800,
-            "modulationIndex": 20,
-            "envelope": {
-                "decay": 0.1,
-            },
-            "volume": -15
-        }).toMaster();
+
+        }, this.parseqs(seq.r0), "16n").start(0)
+  		var hh = new HighHat({"envelope": {            
+                "decay": 0.1,}});
         var hhs = new Tone.Sequence(function(time, pitch) {
 
-            oh.frequency.setValueAtTime(1700, time, Math.random() * 0.5 + 0.5);
-            oh.triggerAttack(time);
 
-        }, this.parseqs(seq.r1), "16n").start(0);
-        var sd = new Tone.MembraneSynth({
-            "pitchDecay": 0.08,
-            "octaves": -2,
-            "envelope": {
-                "attack": 0.0006,
-                "decay": 0.5,
-                "sustain": 0
-            }
-        }).toMaster();
+            hh.trigger(time, Math.random() * 0.5 + 0.5);
+
+        }, this.parseqs(seq.r1), "16n").start(0)
+        var sd = new SnareDrum();
         var sds = new Tone.Sequence(function(time, pitch) {
 
-            sd.triggerAttack(100, time, Math.random() * 0.5 + 0.5);
+            sd.trigger( time, Math.random() * 0.5 + 0.5);
 
-        }, this.parseqs(seq.r2), "16n").start(0);
+        }, this.parseqs(seq.r2), "16n").start(0)
 
-
-        var kd = new Tone.MembraneSynth({
-            "pitchDecay": 0.008,
-            "octaves": 1,
-            "envelope": {
-                "attack": 0.0006,
-                "decay": 0.4,
-                "sustain": 0
-            }
-        }).toMaster();
+        var kd = new KickDrum()
+        
         var kds = new Tone.Sequence(function(time, pitch) {
-            kd.triggerAttack(40, time, Math.random() * 0.5 + 0.5);
-        }, this.parseqs(seq.r3), "16n").start(0);
+            kd.trigger(time, Math.random() * 0.5 + 0.5);
+        }, this.parseqs(seq.r3), "16n").start(0)
         // congaPart.loop = true;
         // congaPart.loopEnd = "1m";
 
@@ -185,8 +213,8 @@ class DrumWidget {
 
 
         ]
-        this.multiButton
-        console.log(this.multiButton, this.multiButton.serialiseMe)
+        this.insts = [oh,hh,sd,kd]
+       
         for (var s in this.sequenceList) {
             for (var i = 0; i < 16; i++) {
 
@@ -196,18 +224,54 @@ class DrumWidget {
 
     }
     startstop() {
+    	console.log("startystop",this.play._value)
         if (this.play._value) {
+        
             Tone.Transport.start("+0.1");
+            this.play.label="Pause"
         } else {
 
             Tone.Transport.stop();
+            this.play.label="Play"
         }
     }
     stop() {
         console.log(this.play._value);
 
     }
+  shareclick() {
+  		console.log(this.multiButton._values);
+  		this.createLink()
+	}
+  	 exportclick() {
+  	 	
+
+  	 }
+  	 createLink(){
+  	 	var s = "?"
+  	 		for(var i=0;i< this.multiButton._values.length;i++){
+  	 			if(i==0){
+  	 				s+="&r0="
+  	 			}else if(i==15){
+  	 				s+="&r1="
+  	 			}else if(i==31){
+  	 				s+="&r2="
+  	 			}else if(i==47){
+  	 				s+="&r3="
+  	 			}
+  	 			if(this.multiButton._values[i]!==null){
+  	 				s+="1";
+  	 			}else{
+  	 				s+="0";
+  	 			}
+  	 		}
+  	 		s+= "&bpm="+window.Tone.Transport.bpm.value
+  	 		s+= "&swing"+this.k2.value
+  	 		var link = "http://demo.charanga.com/dw"+s;
+  	 		$("#shareLink").html("<a class='share' href='"+link+"'>"+link+"</a>")
+  	 }
     multiButtonChanged(row, col, value) {
+    
         console.log(row, col, value);
         console.log(this.sequenceList[row]);
         if (row < this.sequenceList.length) {
@@ -218,6 +282,13 @@ class DrumWidget {
             }
         }
 
+    }
+    draw(){
+    
+  
+    	this.panel.width = Math.min(800,Math.max($(window).width(),320));
+
+    	this.panel.refresh()
     }
 }
 export default DrumWidget;
