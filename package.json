@@ -11,7 +11,7 @@
     "build:css": "cleancss css/main.css -o build/main.min.css",
     "build:html": "htmlprocessor index.html -o build/index.html",
     "copy:all": "npm run copy:assets",
-    "copy:assets": "ncp assets build/assets",
+    "copy:assets": "ncp node_modules/recorderjs/recorderWorker.js assets/recorderWorker.js && ncp assets build/assets",
     "copy:phaser": "ncp node_modules/phaser/build/phaser.min.js build/phaser.min.js",
     "copy:tone": "ncp node_modules/tone/build/Tone.min.js build/tone.min.js",
     "copy:jq": "ncp node_modules/jquery/dist/jquery.min.js build/jquery.min.js",
@@ -31,8 +31,10 @@
     "interface.js": "^0.3.1",
     "jquery": "^3.1.1",
     "query-string": "^4.3.2",
+    "recorderjs": "^1.0.1",
     "startaudiocontext": "^1.2.0",
-    "tone": "^0.8.0"
+    "tone": "^0.8.0",
+    "workerify": "^0.3.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",

@@ -55,7 +55,7 @@ class HighHat extends Tone.Instrument {
         // Connect the graph
         this.bandpass.connect(this.highpass);
         this.highpass.connect(this.envelope);
-        this.envelope.connect(Tone.Master);
+        this.envelope.connect(this.output);
     }
     trigger(time, velocity) {
 

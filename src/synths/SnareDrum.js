@@ -61,7 +61,7 @@ class SnareDrum extends Tone.Instrument {
         this.eq3.connect(Tone.Master)*/
        
         this.oscEnvelope.connect( this.gain);
-         this.gain.connect(Tone.Master)
+         this.gain.connect(this.output)
 
     }
     trigger(time, velocity){

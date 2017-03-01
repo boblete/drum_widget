@@ -2,9 +2,11 @@
 import $ from 'jquery';
 import jQuery from 'jquery';
 import Tone from 'tone'
-import Interface from 'interface.js'
+
 import StartAudioContext from 'startaudiocontext'
 import DrumWidget from './widget/drumWidget';
+
+
 const queryString = require('query-string');
 
 
@@ -18,7 +20,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext
 window.$ = $;
 window.jQuery = jQuery;
 window.Tone = Tone;
-window.Interface = Interface;
+//window.Interface = Interface;
 
 
 
@@ -39,4 +41,5 @@ window.Interface = Interface;
     $(".starterButton").hide();
     $(window).resize(() => {charangaDrumWidget.draw()});
     $(window).on("orientationchange",() => {charangaDrumWidget.draw()});
+    charangaDrumWidget.startUserMedia();
 })

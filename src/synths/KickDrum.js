@@ -31,7 +31,7 @@ class KickDrum extends Tone.Instrument {
         this.envelope = new Tone.AmplitudeEnvelope(this.defaults.envelope)
         this.octaves = this.defaults.octaves;
         this.pitchDecay = this.defaults.pitchDecay;
-        this.osc.chain(this.envelope, Tone.Master);
+        this.osc.chain(this.envelope, this.output);
 
     };
     trigger(time, velocity){
