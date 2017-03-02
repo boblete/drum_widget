@@ -4,6 +4,17 @@ import HighHat from '../synths/HighHat';
 import Recorder from 'recorderjs';
 import Tone from 'tone';
 import Interface from 'interface.js'
+/*
+	TODO - OFFLINING
+	SORTING OUT EXPORT SO ITS SAMPLE CORRECT
+	SORTING OUT SOUNDS SO THEY UTILISE OFFLINE CONTEXTS
+	TRY AND MAKE EVETYTHING USE OFFLINE CONTEXTS SO YOU CAN JUST EXPORT IT DIRECT 
+
+	/CURRENT METHODS A HACK
+
+
+*/
+
 class DrumWidget {
 
     constructor() {
@@ -286,9 +297,14 @@ class DrumWidget {
 		 this.stopRecording()
 }, "1m")
         
-        
-            this.startRecording()
-            Tone.Transport.start("+0.1");
+        	Tone.Transport.scheduleOnce((time) => {
+		 console.log("start",time)
+		 this.startRecording()
+}, "0m")
+           //this.startRecording()
+         
+            Tone.Transport.start("+4n");
+            
             window.isRecording =true;
         }
       
@@ -297,14 +313,14 @@ class DrumWidget {
         // Uncomment if you want the audio to feedback directly
         //input.connect(audio_context.destination);
         //console.log('Input connected to audio context destination.');
-        this.recorder = new Recorder(Tone.Master, { workerPath: "assets/recorder.js" });
+        this.recorder = new Recorder(this.gainer, { workerPath: "assets/recorder.js" });
         console.log('Recorder initialised.');
     }
     startRecording(button) {
         this.recorder && this.recorder.record();
 
-        console.log('Recording...');
-       	
+        console.log('Recording...',Tone.Transport.seconds);
+      
     }
 
     stopRecording(button) {
@@ -313,7 +329,7 @@ class DrumWidget {
         console.log('Stopped recording.');
 
         //
-      Tone.Transport.stop();
+      	Tone.Transport.stop();
 
         // create WAV download link using audio data blob
         this.createDownloadLink();
@@ -368,9 +384,9 @@ class DrumWidget {
         console.log(this.sequenceList[row]);
         if (row < this.sequenceList.length) {
             if (value === 0) {
-                this.sequenceList[row].remove(col)
+                this.sequenceList[row].remove(col);
             } else {
-                this.sequenceList[row].add(col, value)
+                this.sequenceList[row].add(col, value);
             }
         }
         $("#shareLink").hide();
