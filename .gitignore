@@ -64,3 +64,5 @@ build/bundle.min.js
 build/index.html
 
 build/main.min.css
+
+*.sublime-workspace
